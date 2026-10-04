@@ -1,69 +1,152 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.js
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div>
+      <div className="loader">
+        <div className="loader-inner">
+          <div className="circle"></div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <div className="top-header-area" id="sticker">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12 col-sm-12 text-center">
+              <div className="main-menu-wrap">
+                <div className="site-logo">
+                  <a href="index.html">
+                    <img src="assets/img/logo.png" alt=""/>
+                  </a>
+                </div>
+
+                <nav className="main-menu">
+                  <ul>
+                    <li className="current-list-item"><a href="#">Home</a>
+                      <ul className="sub-menu">
+                        <li><a href="index.html">Static Home</a></li>
+                        <li><a href="index_2.html">Slider Home</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Pages</a>
+                      <ul className="sub-menu">
+                        <li><a href="404.html">404 page</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="news.html">News</a>
+                      <ul className="sub-menu">
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="single-news.html">Single News</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="shop.html">Shop</a>
+                      <ul className="sub-menu">
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="checkout.html">Check Out</a></li>
+                        <li><a href="single-product.html">Single Product</a></li>
+                        <li><a href="cart.html">Cart</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div className="header-icons">
+                        <a className="shopping-cart" href="cart.html"><i className="fas fa-shopping-cart"></i></a>
+                        <a className="mobile-hide search-bar-icon" href="#"><i className="fas fa-search"></i></a>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+                <a className="mobile-show search-bar-icon" href="#"><i className="fas fa-search"></i></a>
+                <div className="mobile-menu"></div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
+
+      <div className="search-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <span className="close-btn"><i className="fas fa-window-close"></i></span>
+              <div className="search-bar">
+                <div className="search-bar-tablecell">
+                  <h3>Search For:</h3>
+                  <input type="text" placeholder="Keywords"/>
+                    <button type="submit">Search <i className="fas fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="hero-area hero-bg">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-9 offset-lg-2 text-center">
+              <div className="hero-text">
+                <div className="hero-text-tablecell">
+                  <p className="subtitle">Fresh & Organic</p>
+                  <h1>Delicious Seasonal Fruits</h1>
+                  <div className="hero-btns">
+                    <a href="shop.html" className="boxed-btn">Fruit Collection</a>
+                    <a href="contact.html" className="bordered-btn">Contact Us</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="list-section pt-80 pb-80">
+        <div className="container">
+
+          <div className="row">
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div className="list-box d-flex align-items-center">
+                <div className="list-icon">
+                  <i className="fas fa-shipping-fast"></i>
+                </div>
+                <div className="content">
+                  <h3>Free Shipping</h3>
+                  <p>When order over $75</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 mb-4 mb-lg-0">
+              <div className="list-box d-flex align-items-center">
+                <div className="list-icon">
+                  <i className="fas fa-phone-volume"></i>
+                </div>
+                <div className="content">
+                  <h3>24/7 Support</h3>
+                  <p>Get support all day</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="list-box d-flex justify-content-start align-items-center">
+                <div className="list-icon">
+                  <i className="fas fa-sync"></i>
+                </div>
+                <div className="content">
+                  <h3>Refund</h3>
+                  <p>Get refund within 3 days!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
+
   );
 }
